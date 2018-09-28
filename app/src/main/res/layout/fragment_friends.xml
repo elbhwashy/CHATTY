@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FriendsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/friends_empty_view"
+        android:layout_width="@dimen/friends_empty_view_width"
+        android:layout_height="@dimen/friends_empty_view_height"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/nofriendslist"
+        android:visibility="gone" />
+
+</FrameLayout>

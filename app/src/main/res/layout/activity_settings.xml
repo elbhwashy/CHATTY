@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeSettingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="@dimen/settings_image_size"
+        android:layout_height="@dimen/settings_image_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/settings_image_margin_top"
+        android:src="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/settings_name_margin_top"
+        android:text="@string/settings_display_name_txt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/settings_name_textSize" />
+
+    <Button
+        android:id="@+id/settings_status_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/settings_status_btn_marginBottom"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingStart="@dimen/settings_status_btn_PaddingLeft"
+        android:paddingEnd="@dimen/settings_status_btn_paddingRight"
+        android:text="@string/change_status_btn"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/settings_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_status_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/settings_image_btn_marginBottom"
+        android:backgroundTint="@android:color/white"
+        android:paddingStart="@dimen/settings_image_btn_paddingLeft"
+        android:paddingEnd="@dimen/settings_image_btn_paddingRight"
+        android:text="@string/change_image_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/settings_status_land_marginTop"
+        android:text="@string/default_status"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

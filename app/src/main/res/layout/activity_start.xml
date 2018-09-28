@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/start_screen" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/start_welcome_txt_margin_bottom"
+        android:text="@string/welcome_to_chatapp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/start_welcome_txt_textSize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/start_reg_btn_margin_bottom"
+        android:backgroundTint="@android:color/white"
+        android:paddingStart="@dimen/start_reg_btn_padding_left"
+        android:paddingEnd="@dimen/start_reg_btn_padding_right"
+        android:textAllCaps="false"
+        android:text="@string/need_a_new_account"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_above="@+id/start_reg_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/start_login_btn_margin_bottom"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingStart="@dimen/start_login_btn_padding_left"
+        android:paddingEnd="@dimen/start_login_btn_padding_right"
+        android:textAllCaps="false"
+        android:text="@string/already_have_account"
+        android:textColor="@android:color/white"
+         />
+
+</RelativeLayout>

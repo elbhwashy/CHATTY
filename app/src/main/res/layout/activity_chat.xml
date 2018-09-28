@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeChatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChatActivity">
+
+    <include
+        android:id="@+id/chat_bar_layout"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_message_linear_layout"
+        android:layout_below="@+id/chat_bar_layout"
+        android:layout_marginBottom="@dimen/message_list_rec_bottom_margin"/>
+
+    <LinearLayout
+        android:id="@+id/chat_message_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_message_linear_layout_height"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

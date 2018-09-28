@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeSearchLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activities.SearchActivity">
+
+    <include
+        android:id="@+id/users_appBar"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/heading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/users_appBar"
+        android:layout_marginStart="@dimen/search_heading_label_margin_start"
+        android:layout_marginTop="@dimen/search_heading_label_margin_top"
+        android:text="@string/search_user"
+        android:textColor="#555555"
+        android:textSize="@dimen/search_heading_label_textSize" />
+
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heading_label"
+        android:layout_below="@+id/heading_label"
+        android:layout_marginEnd="@dimen/search_field_margin_end"
+        android:layout_marginTop="@dimen/search_field_margin_top"
+        android:layout_toStartOf="@+id/search_btn"
+        android:ems="10"
+        android:hint="@string/hint_search_here"
+        android:inputType="textPersonName"
+        android:paddingBottom="@dimen/search_field_padding_bottom"
+        android:paddingStart="@dimen/search_field_padding_left"
+        android:paddingEnd="@dimen/search_field_padding_right"
+        android:paddingTop="@dimen/search_field_padding_top"
+        android:textColor="@color/search_field_textColor"
+        android:textSize="@dimen/search_field_textSize" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_field"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/search_field"
+        android:layout_marginEnd="@dimen/search_btn_margin_end"
+        android:background="@android:color/background_light"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_field"
+        android:layout_marginTop="@dimen/search_rec_list_margin_top" />
+
+</RelativeLayout>

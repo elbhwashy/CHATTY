@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChatsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/chats_empty_view"
+        android:layout_width="@dimen/chats_empty_view_width"
+        android:layout_height="@dimen/chats_empty_view_height"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/nochats"
+        android:visibility="gone" />
+
+</FrameLayout>

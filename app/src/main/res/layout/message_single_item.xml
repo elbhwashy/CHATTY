@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/message_single_layout_padding">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_single_profile_image"
+        android:layout_width="@dimen/message_single_profile_image"
+        android:layout_height="@dimen/message_single_profile_image"
+        android:src="@drawable/profile_pic" />
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/message_single_profile_image"
+        android:orientation="horizontal"
+        android:padding="@dimen/message_layout_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chat_userName_single_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/chat_userName_single_margin_start"
+                android:text="@string/hint_user_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/chat_userName_single_text_view_textSize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/message_image_single_margin_end"
+                android:layout_marginStart="@dimen/message_image_single_margin_start"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/message_single_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/message_single_txt_view_margin_start"
+                android:text="@string/enter_message"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/message_single_txt_view_textSize" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_single_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/time_single_text_view_margin_start"
+            android:text="@string/message_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/time_single_text_view_textSize" />
+
+    </LinearLayout>
+
+</RelativeLayout>
